@@ -1,0 +1,31 @@
+{
+  "name": "basegrafica",
+  "version": "1.0.0",
+  "description": "base gráfica para implementación dentro de proyectos MVC y WebForm",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "bootstrap-scss": "^4.3.1",
+    "postcss-cli": "^6.1.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.5.1",
+    "css-loader": "^2.1.1",
+    "mini-css-extract-plugin": "^0.7.0",
+    "node-sass": "^4.12.0",
+    "postcss-loader": "^3.0.0",
+    "postcss-modules": "^1.4.1",
+    "postcss-preset-env": "^6.6.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "author": "Álvaro Emparán",
+  "license": "ISC",
+  "keywords": []
+}
