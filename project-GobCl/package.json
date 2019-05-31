@@ -4,6 +4,7 @@
   "description": "base gráfica para implementación dentro de proyectos MVC y WebForm",
   "main": "webpack.config.js",
   "dependencies": {
+    "@gobdigital-cl/gob.cl": "^3.0.4",
     "bootstrap": "^4.3.1",
     "bootstrap-scss": "^4.3.1",
     "postcss-cli": "^6.1.2"
