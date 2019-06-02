@@ -3,7 +3,6 @@
 // Variables should follow the `$component-state-property-size` formula for
 // consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
 
-
 //
 // Color system
 //
@@ -36,6 +35,14 @@ $grays: map-merge(
   ),
   $grays
 );
+
+// paths
+//$images-path: "../img/" !default;
+$fonts-path: '/fonts/gobCL/' !default;
+
+$primary-font: "Roboto", sans-serif !default;
+$accent-font: "Roboto Slab", serif !default;
+
 
 
 $blue:    #007bff !default;
@@ -243,9 +250,11 @@ $transition-fade:             opacity .15s linear !default;
 $transition-collapse:         height .35s ease !default;
 
 
+
 // Fonts
 //
 // Font, line-height, and color for body text, headings, and more.
+
 
 // stylelint-disable value-keyword-case
 $font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
@@ -950,3 +959,222 @@ $pre-scrollable-max-height:         340px !default;
 // Printing
 $print-page-size:                   a3 !default;
 $print-body-min-width:              map-get($grid-breakpoints, "lg") !default;
+
+
+////Fonts
+
+@font-face {
+  font-family: "gobCl";
+  src:url("#{$fonts-path}gobCL_Regular.otf"),
+      url("#{$fonts-path}gob-cl.eot") format("eot"),
+      url("#{$fonts-path}gob-cl.woff") format("woff"),
+      url("#{$fonts-path}gob-cl.ttf") format("truetype"),
+      url("#{$fonts-path}gob-cl.svg") format("svg");
+}
+
+@font-face {
+  font-family: "gobCl_light";
+  src: url("#{$fonts-path}gobCL_Light.otf");
+}
+
+@font-face {
+  font-family: "gobCL_Bold";
+  src: url("#{$fonts-path}gobCL_Bold.otf");
+}
+
+@font-face {
+  font-family: "gobCL_Heavy";
+  src: url("#{$fonts-path}gobCL_Heavy.otf");
+}
+
+$fonts: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$fonts: map-merge(
+  (
+    "primary": $primary-font,
+    "accent": $accent-font
+  ),
+  $fonts
+);
+
+
+///icons
+$blue-light: #a8b7c7 !default;
+$blue: #006fb3 !default;
+$blue-dark: #0a132d !default;
+$red: #fe6565 !default;
+$gray: #a8b7c7 !default;
+$yellow: #f2c728 !default;
+$green: #2d717c !default;
+$orangea: #e0701e !default;
+$orangeb: #ffa11b !default;
+$purple: #63c !default;
+$colorlala:#e0701e !default;
+
+$gray-c : #333 !default;
+
+$primary: $blue !default;
+$secondary: $red !default;
+$tertiary: $blue-dark !default;
+$accent: $blue-light !default;
+$neutral: $gray-c !default;
+
+@font-face {
+  font-family: icongob-cl;
+  font-style: $font-weight-normal;
+  font-weight: $font-weight-normal;
+  src: url("#{$fonts-path}fontello.eot?kyr2k2");
+  src:
+    url("#{$fonts-path}fontello.eot?kyr2k2#iefix") format("embedded-opentype"),
+    url("#{$fonts-path}fontello.ttf?kyr2k2") format("truetype"),
+    url("#{$fonts-path}fontello.woff2?kyr2k2") format("woff2"),
+    url("#{$fonts-path}fontello.woff?kyr2k2") format("woff"),
+    url("#{$fonts-path}fontello.svg?kyr2k2#icongob-cl") format("svg");
+}
+
+/////iconos
+
+// icons
+$icons: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$icons: map-merge(
+  (
+
+    "search": ( "\e800", $black ),
+    "agenda": ( "\e801", $black ),
+    "agendarhora": ( "\e802", $black ),
+    "alerta": ( "\e803", $black ),
+    "ayuda": ( "\e804", $black ),
+    "beneficios": ( "\e805", $black),
+    "boot": ( "\e806", $black),
+    "callcenter": ( "\e807", $black ),
+    "cargar": ( "\e808", $black ),
+    "cerrar": ( "\e809", $black ),
+    "certificado_1": ( "\e80a", $black ),
+    "claveunica": ( "\e80b", $black ),
+    "contraste": ( "\e80c", $black ),
+    "descargar": ( "\e80d", $black ),
+    "editar": ( "\e80e", $black ),
+    "facebook": ( "\e80f", $black ),
+    "filtro": ( "\e810", $black ),
+    "hablar": ( "\e811", $black ),
+    "img": ( "\e812", $black ),
+    "info": ( "\e813", $black ),
+    "like": ( "\e814", $black ),
+    "link": ( "\e815", $black ),
+    "login": ( "\e816", $black ),
+    "lupa": ( "\e817", $black ),
+    "mas": ( "\e818", $black ),
+    "menos": ( "\e819" $black ),
+    "menu": ( "\e81a", $black ),
+    "mess": ( "\e81b", $black ),
+    "no-like": ( "\e81c", $black ),
+    "notificacion": ( "\e81d", $black ),
+    "pause": ( "\e81e", $black ),
+    "play": ( "\e81f", $black ),
+    "print": ( "\e820", $black ),
+    "sound": ( "\e821", $black ),
+    "sucursales": ( "\e822", $black ),
+    "telefono": ( "\e823", $black ),
+    "trash": ( "\e824", $black ),
+    "twitter": ( "\e825", $black ),
+    "ver": ( "\e826", $black ),
+    "youtube": ( "\e827", $black ),
+    "instagram": ( "\e828", $black ),
+    "mail-alt": ( "\f0e0", $black ),
+
+    "close-line": ("\e902", $accent),
+    "logout": ("\e915", $accent),
+    "download": ("\e908", $black),
+    "breadcrumb-arrow": ("\e901", $accent),
+    "arrow-line": ("\e90b", $primary),
+    "close": ("\e909", $accent),
+    "decrease-text": ("\e904", $accent),
+    "increase-text": ("\e90a", $accent),
+    "contrast": ("\e903", $accent),
+    "messenger": ("\e930", $accent),
+    "arrow": ("\e90e", $accent),
+    "telephone": ("\e92c", $primary),
+    "grant": ("\e920", $primary),
+    "bonuses": ("\e91c", $primary),
+    "burger": ("\e914", $black),
+    "certificates": ("\e91e", $primary),
+    "key-unique": ("\e905", $primary),
+    "meet-authorities": ("\e922", $primary),
+    "filter": ("\e91b", $primary),
+    "procedures": ("\e91e", $primary),
+    "login-fill": ("\e918", $primary),
+    "question": ("\e91a", $accent),
+    "doctor": ("\e91f", $primary),
+    "woman": ("\e92d", $primary),
+    "health": ("\e921", $primary),
+    "modules": ("\e924", $primary),
+    "navigation": ("\e925", $primary),
+    "recent-news": ("\e927", $primary),
+    "mobile-offices": ("\e923", $primary),
+    "pensions": ("\e926", $primary),
+    "social-networks": ("\e929", $primary),
+    "subsidy-of-cesantia": ("\e92b", $primary),
+    "subsidies": ("\e92a", $primary),
+    "accessibility": ("\e900", $accent),
+    "branches": ("\e91d", $primary),
+    "arrow-right": ("\e90c", $accent),
+    "add-circle-line": ("\e910", $accent),
+    "add-circle-fill": ("\e90f", $accent),
+    "m-arrow-right": ("\e90d", $black),
+    "m-arrow-down": ("\e911", $black),
+    "m-arrow-up": ("\e912", $black)
+  ),
+  $icons
+);
+$icon-sizes: 10 !default;
+
+
+
+.cl {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: icongob-cl !important; /* stylelint-disable-line */
+  font-style: normal;
+  font-weight: $font-weight-normal;
+  font-variant: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+%cl {
+
+  @extend %cl;
+
+  @for $i from 2 through $icon-sizes {
+    &.cl-#{$i}x {
+      font-size: $font-size-base * $i;
+    }
+  }
+}
+
+@each $key, $value in $icons {
+  .cl-#{$key} {
+    color: nth($value, 2);
+
+    &::before {
+      color: inherit;
+      content: nth($value, 1);
+    }
+  }
+}
+
+.cl-img-preview .path1::before {
+  color: gray("c");
+  content: "\e906";
+}
+
+.cl-img-preview .path2::before {
+  margin-left: -1em;
+  color: gray("b");
+  content: "\e907";
+}
