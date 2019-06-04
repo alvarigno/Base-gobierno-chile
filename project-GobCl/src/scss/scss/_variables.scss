@@ -6,6 +6,7 @@
 //
 // Color system
 //
+$bootstrap-sass-asset-helper: false !default;
 
 $white:    #fff !default;
 $gray-100: #f8f9fa !default;
@@ -44,6 +45,7 @@ $primary-font: "Roboto", sans-serif !default;
 $accent-font: "Roboto Slab", serif !default;
 
 
+$buel-gobcl: #0F69B4 !default;
 
 $blue:    #007bff !default;
 $indigo:  #6610f2 !default;
@@ -254,6 +256,12 @@ $transition-collapse:         height .35s ease !default;
 // Fonts
 //
 // Font, line-height, and color for body text, headings, and more.
+//** File name for all font files.
+$icon-font-name:          "glyphicons-halflings-regular" !default;
+//** Element ID within SVG icon file.
+$icon-font-svg-id:        "glyphicons_halflingsregular" !default;
+
+$icon-font-path: if($bootstrap-sass-asset-helper, "bootstrap/", "fonts/bootstrap/") !default;
 
 
 // stylelint-disable value-keyword-case
