@@ -7,6 +7,8 @@
 // Color system
 //
 $bootstrap-sass-asset-helper: false !default;
+$images-asset-helper: false !default;
+
 
 $white:    #fff !default;
 $gray-100: #f8f9fa !default;
@@ -126,6 +128,7 @@ $enable-transitions:        true !default;
 $enable-hover-media-query:  false !default; // Deprecated, no longer affects any compiled CSS
 $enable-grid-classes:       true !default;
 $enable-print-styles:       true !default;
+$enable-social-icon:       true !default;
 
 
 // Spacing
@@ -262,7 +265,6 @@ $icon-font-name:          "glyphicons-halflings-regular" !default;
 $icon-font-svg-id:        "glyphicons_halflingsregular" !default;
 
 $icon-font-path: if($bootstrap-sass-asset-helper, "bootstrap/", "fonts/bootstrap/") !default;
-
 
 // stylelint-disable value-keyword-case
 $font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
@@ -1137,7 +1139,15 @@ $icons: map-merge(
 );
 $icon-sizes: 10 !default;
 
+$line-height-computed: 10 !default;
+$padding-base-vertical: 10 !default;
+$padding-large-vertical: 10 !default;
 
+$padding-small-vertical: 5 !default;
+$padding-large-vertical: 5 !default;
+$padding-small-horizontal: 5 !default;
+$padding-large-horizontal: 5 !default;
+$padding-base-horizontal: 5 !default;
 
 .cl {
   /* use !important to prevent issues with browser extensions that change fonts */

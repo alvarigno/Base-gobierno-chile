@@ -40,3 +40,12 @@
   font-size: $figure-caption-font-size;
   color: $figure-caption-color;
 }
+
+
+.logo_mtt {
+  width: 201px;
+  height: 182px;
+  background-image: url("/images/home-logo-main-2018.png");
+  position: absolute;
+  z-index: 1;
+}
